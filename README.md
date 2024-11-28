@@ -16,19 +16,19 @@
 To run the dev server for your app, use:
 
 ```sh
-npx nx serve vue-nest-playground
+npx nx serve frontend
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx build vue-nest-playground
+npx nx build frontend
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project vue-nest-playground
+npx nx show project frontend
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.

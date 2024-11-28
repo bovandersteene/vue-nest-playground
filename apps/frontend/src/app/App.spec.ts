@@ -5,6 +5,6 @@ import App from './App.vue';
 describe('App', () => {
   it('renders properly', async () => {
     const wrapper = mount(App, {});
-    expect(wrapper.text()).toContain('Welcome vue-nest-playground 👋');
+    expect(wrapper.text()).toContain('Welcome frontend 👋');
   });
 });
