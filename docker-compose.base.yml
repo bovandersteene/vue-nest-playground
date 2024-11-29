@@ -1,11 +1,34 @@
 version: '3'
 
 services:
-  nx-app-base:
+  nx-app-base-dev:
+    restart: always
+    build:
+      context: .
+      dockerfile: $PWD/docker/dev/Dockerfile
+      target: node-dev
+    environment:
+      - DEV_PLATFORM=DOCKER
+    volumes:
+      - ./:/app
+      - /app/node_modules
+
+# TODO create right docker file for production
+  nx-app-base-prod-fe:
     restart: always
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - DEV_PLATFORM=DOCKER
+    volumes:
+      - ./:/app
+      - /app/node_modules
+  nx-app-base-prod-be:
+    restart: always
+    build:
+      context: .
+      dockerfile: $PWD/docker/nestjs/Dockerfile
     environment:
       - DEV_PLATFORM=DOCKER
     volumes:

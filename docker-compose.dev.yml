@@ -3,8 +3,8 @@ services:
 
   frontend:
     extends:
-      file: docker-compose.base.yml
-      service: nx-app-base
+      file:  docker-compose.base.yml
+      service: nx-app-base-dev
     command: pnpm run frontend:docker
     ports:
       - 4200:4200
@@ -14,7 +14,7 @@ services:
   backend:
     extends:
       file: docker-compose.base.yml
-      service: nx-app-base
+      service: nx-app-base-dev
     command: pnpm run backend:docker
     ports:
       - 3000:3000

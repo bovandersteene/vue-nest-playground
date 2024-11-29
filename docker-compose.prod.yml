@@ -1,0 +1,23 @@
+
+services:
+# TODO define services
+#  frontend:
+#    extends:
+#      file:  docker-compose.base.yml
+#      service: nx-app-base-dev
+#    command: pnpm run frontend:docker
+#    ports:
+#      - 4200:4200
+#    depends_on:
+#      - backend
+
+#  backend:
+#    extends:
+#      file: docker-compose.base.yml
+#      service: nx-app-base-prod-be
+#    command: pnpm run backend:docker
+#    ports:
+#      - 3000:3000
+#    depends_on:
+#      - db
+

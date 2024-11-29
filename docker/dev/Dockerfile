@@ -1,6 +1,6 @@
 ARG NODE_VERSION=20
 
-FROM node:${NODE_VERSION}-slim
+FROM node:${NODE_VERSION}-slim as node-dev
 
 WORKDIR "/app"
 
